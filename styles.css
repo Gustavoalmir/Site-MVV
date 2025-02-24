@@ -248,10 +248,18 @@ footer {
     color: var(--light);
     font-size: 1rem;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.credit a:hover {
-    color: var(--primary);
+.credit-logo {
+    width: 75px; /* Mesmo tamanho da logo da navbar */
+    transition: transform 0.3s ease;
+}
+
+.credit-logo:hover {
+    transform: translateY(-3px); /* Efeito similar ao botão CTA */
 }
 
 .about-hero {
