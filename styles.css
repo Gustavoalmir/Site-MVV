@@ -481,7 +481,7 @@ footer {
     position: relative;
 }
 
-.-hero::before {
+.pgm-hero::before {
     content: '';
     position: absolute;
     top: 0;
