@@ -71,8 +71,6 @@
     transform-origin: bottom left;
 }
 
-
-
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -140,8 +138,10 @@
 
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .event-card {
@@ -355,19 +355,117 @@ footer {
     color: #555;
         }
 
-
+.menu-toggle {
+    display: none; /* Escondido por padrão */
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    /* Redução geral de tamanhos */
+    :root {
+        font-size: 14px;
+    }
+
+    /* Ajuste do navbar */
+    .nav-content {
+        padding: 0.5rem 5%;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    /* Redução do hero section */
+    .hero {
+        height: 50vh;
+        margin-top: 50px;
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    /* Compactação dos eventos */
+    .event-grid {
+        gap: 1rem;
+    }
+
+    .event-image {
+        height: 150px;
+    }
+
+    .event-info {
+        padding: 1rem;
+    }
+
+    /* Ajuste do contato */
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    /* Redução do footer */
+    footer {
+        padding: 2rem 5%;
+    }
+
+    .social-icons {
+        margin: 1rem 0;
+    }
+
+    /* Ajuste geral de espaçamentos */
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    .events, .contact-section {
+        padding: 3rem 5%;
+    }
+
+    /* Navbar Mobile */
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar-social-icons {
+        display: none;
+    }
+
+    /* Menu Hambúrguer */
+    .menu-toggle {
+        display: block; /* Mostrar apenas em mobile */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 2rem;
+        color: var(--secondary);
     }
 }
 
@@ -398,4 +496,26 @@ footer {
     font-size: 3.5rem;
     position: relative;
     z-index: 1;
+}
+
+/* Filtro de Eventos */
+.filter-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-filter {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    background: var(--light);
+    color: var(--secondary);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-filter:hover {
+    background: var(--primary);
+    color: var(--light);
 }

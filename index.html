@@ -63,7 +63,25 @@
                         <p>Venha apredender o mais profundo sobre a Bíblia.</p>
                     </div>
                 </div>
-                <!-- Adicione mais cards de eventos -->
+                <!-- Novo Card 1 - Culto Jovem -->
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('imagens/cultojovem.jpg')"></div>
+                    <div class="event-info">
+                        <span class="event-date">Todo o último domingo do mês - 19:17h</span>
+                        <h3>Culto Jovem MVV</h3>
+                        <p>Encontros dinâmicos com música, palavra e networking para jovens.</p>
+                    </div>
+                </div>
+
+                <!-- Novo Card 2 - Círculo de Oração -->
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('imagens/evento3.jpg')"></div>
+                    <div class="event-info">
+                        <span class="event-date">Todo sábado - 17:00h</span>
+                        <h3>Círculo de Oração</h3>
+                        <p>Momento poderoso de intercessão e comunhão com Deus.</p>
+                    </div>
+                </div>
             </div>
         </section>
     
@@ -99,6 +117,35 @@
                 <p>&copy; Site criado por <a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_<i class="fab fa-instagram"></i></a></p>
             </div>
         </footer>
-    <script src="navbar.js"></script>
+    <script src="functions.js"></script>
+    <script>
+        // Menu Mobile
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        document.querySelector('.nav-content').appendChild(menuToggle);
+    
+        menuToggle.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        });
+    
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

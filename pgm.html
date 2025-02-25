@@ -16,7 +16,7 @@
             <div class="nav-content">
                 <div class="logo">
                     <a href="index.html">
-                    <img src="imagens/logo.png" alt="Logo" class="logo"></a>
+                    <img src="imagens/icon.png" alt="Logo" class="logo"></a>
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Início</a>
@@ -38,6 +38,85 @@
         <h1>Pequeno Grupo Multiplicador</h1>
     </section>
 
+     <!-- Sobre o PGM -->
+     <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>PGM</h2>
+                    <p>
+                        PGM é 
+                    </p>
+                    <p>
+                        Nossa missão é ser uma igreja acolhedora, onde todos possam encontrar esperança, amor e 
+                        propósito em Cristo. Estamos comprometidos em servir a Deus e ao próximo com integridade 
+                        e paixão.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe" alt="Igreja">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Na seção de eventos -->
+<section class="events" id="eventos">
+    <h2 class="section-title">Nossos PGM</h2>
+    
+    <!-- Filtro de Eventos -->
+    <div class="filter-container">
+        <select id="eventFilter" class="event-filter">
+            <option value="todos">Todos os PGM</option>
+            <option value="seropedica">Seropédica</option>
+            <option value="sao-miguel">São Miguel</option>
+
+        </select>
+    </div>
+
+    <div class="event-grid">
+        <!-- Culto de Celebração -->
+        <div class="event-card" data-category="culto">
+            <div class="event-image" style="background-image: url('imagens/evento1.jpg')"></div>
+            <div class="event-info">
+                <span class="event-date">Aos Domingos - 19:17h</span>
+                <h3>Culto de Celebração</h3>
+                <p>Venha adorar conosco em um momento especial de louvor e palavra.</p>
+            </div>
+        </div>
+
+        <!-- Escola de Profetas -->
+        <div class="event-card" data-category="escola">
+            <div class="event-image" style="background-image: url('imagens/escola.jpg')"></div>
+            <div class="event-info">
+                <span class="event-date">Toda sexta-feira - 19:30h</span>
+                <h3>Escola de Profetas</h3>
+                <p>Venha aprender o mais profundo sobre a Bíblia.</p>
+            </div>
+        </div>
+
+        <!-- Culto Jovem -->
+        <div class="event-card" data-category="jovem">
+            <div class="event-image" style="background-image: url('imagens/cultojovem.jpg')"></div>
+            <div class="event-info">
+                <span class="event-date">Todo último domingo do mês - 19:17h</span>
+                <h3>Culto Jovem MVV</h3>
+                <p>Encontros dinâmicos com música, palavra e networking para jovens.</p>
+            </div>
+        </div>
+
+        <!-- Círculo de Oração -->
+        <div class="event-card" data-category="oracao">
+            <div class="event-image" style="background-image: url('imagens/evento3.jpg')"></div>
+            <div class="event-info">
+                <span class="event-date">Todo sábado - 17:00h</span>
+                <h3>Círculo de Oração</h3>
+                <p>Momento poderoso de intercessão e comunhão com Deus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
  <!-- Footer -->
     <footer>
         <div class="social-icons">
@@ -51,6 +130,35 @@
             <p>&copy; Site criado por  <a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_<i class="fab fa-instagram"></i></a></p>
         </div>
     </footer>
-    <script src="navbar.js"></script>
+    <script src="functions.js"></script>
+    <script>
+        // Menu Mobile
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        document.querySelector('.nav-content').appendChild(menuToggle);
+    
+        menuToggle.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        });
+    
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     </body>
 </html>

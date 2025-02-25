@@ -16,7 +16,7 @@
             <div class="nav-content">
                 <div class="logo">
                     <a href="index.html">
-                    <img src="imagens/logo.png" alt="Logo" class="logo"></a>
+                    <img src="imagens/icon.png" alt="Logo" class="logo"></a>
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Início</a>
@@ -105,6 +105,35 @@
                 
             </div>
         </footer>
-        <script src="navbar.js"></script>
+        <script src="functions.js"></script>
+        <script>
+            // Menu Mobile
+            const menuToggle = document.createElement('div');
+            menuToggle.className = 'menu-toggle';
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            document.querySelector('.nav-content').appendChild(menuToggle);
+        
+            menuToggle.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');
+            });
+        
+            // Fechar menu ao clicar em um link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.querySelector('.nav-links').classList.remove('active');
+                });
+            });
+        
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
