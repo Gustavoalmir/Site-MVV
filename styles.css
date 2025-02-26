@@ -519,3 +519,65 @@ footer {
     background: var(--primary);
     color: var(--light);
 }
+
+/* Cartas */
+        .cartas-hero {
+            height: 100vh;
+            background: url(imagens/cartas.jpeg) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light);
+            margin-top: 90px;
+            position: relative;
+        }
+
+        .cartas-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            /* Overlay escuro para melhorar a legibilidade */
+        }
+
+        .cartas-hero h1 {
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Sobre Nós */
+        .cartas-section {
+            padding: 5rem 5%;
+            background: var(--light);
+        }
+
+        .cartas-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .cartas-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .cartas-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .cartas-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
