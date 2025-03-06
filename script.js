@@ -36,5 +36,5 @@ window.addEventListener('scroll', () => {
             } else {
                 event.style.display = 'none';
             }
-        });
+        }); 
     });
