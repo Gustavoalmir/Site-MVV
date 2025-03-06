@@ -452,10 +452,12 @@ footer {
     .navbar-social-icons {
         display: flex;
         position: absolute;
-        right: 120px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 45px;
         gap: 10px;
         margin: 0;
+        z-index: 1001;
     }
 
     /* Menu Hambúrguer */
