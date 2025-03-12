@@ -487,6 +487,22 @@ footer {
         text-align: center;
     }
 
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-image {
+        display: none;
+    }
+    .about-text {
+        order: 1;
+        text-align: left;
+    }
+    .about-section {
+        text-align: center;
+    }
+
 }
 
 .pgm-hero {
