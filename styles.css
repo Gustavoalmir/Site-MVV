@@ -36,7 +36,7 @@
 }
 
 .logo {
-    width: 75px;
+    width: 55px;
 }
 
 .nav-links a {
@@ -254,7 +254,7 @@ footer {
 
 .about-hero {
     height: 60vh;
-    background: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe') no-repeat center center/cover;
+    background: url('imagens/bannersm.jpeg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
