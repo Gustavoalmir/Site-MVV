@@ -390,7 +390,7 @@ footer {
 @media (max-width: 768px) {
     /* Redução geral de tamanhos */
     :root {
-        font-size: 14px;
+        font-size: 17.5px; /* Aumentado em 25% de 14px */
     }
 
     /* Ajuste do navbar */
@@ -399,7 +399,7 @@ footer {
     }
     
     .year-banner {
-        font-size: 0.9rem;
+        font-size: 1.13rem; /* Aumentado em 25% de 0.9rem */
         padding: 3px 0;
     }
 
@@ -412,7 +412,7 @@ footer {
     }
 
     .nav-links a {
-        font-size: 1rem;
+        font-size: 1.25rem; /* Aumentado em 25% de 1rem */
         padding: 0.5rem 0;
     }
 
@@ -423,18 +423,18 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.88rem; /* Aumentado em 25% de 1.5rem */
         margin-bottom: 0.5rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1.25rem; /* Aumentado em 25% de 1rem */
         margin-bottom: 1rem;
     }
 
     .cta-button {
         padding: 0.6rem 1.2rem;
-        font-size: 0.8rem;
+        font-size: 1rem; /* Aumentado em 25% de 0.8rem */
     }
 
     /* Compactação dos eventos */
@@ -453,7 +453,7 @@ footer {
 
     /* Ajuste do contato */
     .contact-info p {
-        font-size: 0.9rem;
+        font-size: 1.13rem; /* Aumentado em 25% de 0.9rem */
     }
 
     /* Redução do footer */
@@ -518,7 +518,7 @@ footer {
         position: absolute;
         right: 20px;
         top: 35px;
-        font-size: 2rem;
+        font-size: 2.5rem; /* Aumentado em 25% de 2rem */
         color: var(--secondary);
     }
 
@@ -554,6 +554,37 @@ footer {
         text-align: center;
     }
 
+    .navbar-social-icons a {
+        font-size: 2.38rem; /* Aumentado em 25% de 1.9rem */
+    }
+
+    .section-title {
+        font-size: 2.19rem; /* Aumentado em 25% (baseado no tamanho padrão de 30px * 25% = 37.5px, que corresponde a aproximadamente 2.19rem em base de 17.5px) */
+    }
+
+    .event-date {
+        font-size: 1.25rem; /* Aumentado em 25% */
+    }
+
+    .event-info h3 {
+        font-size: 1.5rem; /* Aumentado em 25% */
+    }
+
+    .event-info p {
+        font-size: 1.25rem; /* Aumentado em 25% */
+    }
+
+    .value-card h3 {
+        font-size: 1.88rem; /* Aumentado em 25% de 1.5rem */
+    }
+
+    .value-card p {
+        font-size: 1.25rem; /* Aumentado em 25% de 1rem */
+    }
+
+    .social-icons a {
+        font-size: 1.88rem; /* Aumentado em 25% */
+    }
 }
 
 .pgm-hero {
