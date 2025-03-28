@@ -56,10 +56,19 @@
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+    position: relative;
 }
 
 .logo {
     width: 55px;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -472,14 +481,24 @@ footer {
     }
 
     .nav-links {
+        position: static;
+        transform: none;
         display: none;
         width: 100%;
         flex-direction: column;
         margin: 1rem 0;
+        text-align: center;
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem 0;
     }
 
     .navbar-social-icons {
@@ -539,7 +558,7 @@ footer {
 
 .pgm-hero {
     height: 60vh;
-    background: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe') no-repeat center center/cover;
+    background: url('imagens/baner-pgm.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
