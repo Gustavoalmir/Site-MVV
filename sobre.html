@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="icon" href="imagens/icon.png" type="image/png">
-    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-    <body>]
-         <!-- 2025 - Ano Da Maturidade -->
-         <div class="year-banner">
-            <h2 class="year-title"><strong>2025</strong> - Ano Da Porção Dobrada</h2>
-        </div>
-        <!-- Navbar -->
-        <nav class="navbar">
+<body>
+    <!-- 2025 - Ano Da Maturidade -->
+    <div class="year-banner">
+        <h2 class="year-title"><strong>2025</strong> - Ano Da Porção Dobrada</h2>
+    </div>
+    
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar"> 
             <div class="nav-content">
-                <div class="logo">
+                <div class="logo-container">
                     <a href="index.html">
-                    <img src="imagens/icon.png" alt="Logo" class="logo"></a>
+                        <img src="imagens/icon.png" alt="Logo" class="logo">
+                    </a>
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Início</a>
@@ -29,109 +32,69 @@
                     <a href="index.html#eventos">Eventos</a>
                 </div>
                 <div class="navbar-social-icons">
-                    <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </nav>
-        
+    </div>
+
+    <main class="content-wrapper">
         <!-- Hero Section -->
-    <section class="about-hero">
-        <h1>Sobre Nós</h1>
-    </section>
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>Sobre Nós</h1>
+            </div>
+        </section>
 
-    <!-- Sobre Nós -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Nossa História</h2>
-                    <p>
-                        O Ministério Verdade e Vida no bairro São Miguel surgiu em 1979 como uma filial da sede em Nilópolis-RJ, fruto de uma missão evangelística. Inicialmente, contou com colaboradores como o Pr. Ivo Constâncio da Silva, irmã Odete e outros membros. O primeiro pastor foi Pr. Eleazar Fraga da Silva, seguido por um período interino liderado por Jorge Luiz de Oliveira Marcelino. Em seguida, o Pr. Edvaldo Affonso Torres assumiu, marcando a emancipação da igreja de Nilópolis em 2002 e a restauração das raízes judaicas em 2005, quando o nome foi alterado para Ministério Verdade e Vida – Projeto Restaurar.
-                    <p>
-                        Em 2006, o Pr. Edvaldo passou a liderança ao Pr. André Luiz, que, em 2016, transferiu o pastoreio ao atual líder, Pr. Marcos Medeiros, auxiliado pelos pastores Jorge Luiz e Renato Morone, que segue atualmente.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="imagens/igrejasm.jpeg" alt="Igreja">
+        <!-- Sobre Nós -->
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">Nossa História</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            O Ministério Verdade e Vida no bairro São Miguel surgiu em 1979 como uma filial da sede em Nilópolis-RJ, fruto de uma missão evangelística. Inicialmente, contou com colaboradores como o Pr. Ivo Constâncio da Silva, irmã Odete e outros membros. O primeiro pastor foi Pr. Eleazar Fraga da Silva, seguido por um período interino liderado por Jorge Luiz de Oliveira Marcelino.
+                        </p>
+                        <p>
+                            Em seguida, o Pr. Edvaldo Affonso Torres assumiu, marcando a emancipação da igreja de Nilópolis em 2002 e a restauração das raízes judaicas em 2005, quando o nome foi alterado para Ministério Verdade e Vida – Projeto Restaurar.
+                        </p>
+                        <p>
+                            Em 2006, o Pr. Edvaldo passou a liderança ao Pr. André Luiz, que, em 2016, transferiu o pastoreio ao atual líder, Pr. Marcos Medeiros, auxiliado pelos pastores Jorge Luiz e Renato Morone, que segue atualmente.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="imagens/igrejasm.jpeg" alt="Igreja">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Valores -->
-    <section class="values-section">
-        <div class="container">
-            <h2 class="section-title">Nossos Valores</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <i class="fas fa-hands-praying"></i>
-                    <h3>Fé</h3>
-                    <p>Cremos no poder da fé para transformar vidas e realizar milagres.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Amor</h3>
-                    <p>O amor é a base de tudo o que fazemos, refletindo o amor de Cristo.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Serviço</h3>
-                    <p>Servimos a Deus e ao próximo com dedicação e humildade.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fa-solid fa-earth-americas"></i></i>
-                    <h3>Missões</h3>
-                    <p>Nossa missão é levar a palavra de Deus à todas as nações</p>
-                </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagens/icon.png" alt="Logo" class="footer-img">
+                <h3>Igreja Ministério Verdade Vida</h3>
             </div>
-        </div>
-    </section>
-
-        <!-- Footer -->
-        <footer>
+            
             <div class="social-icons">
-                <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>&copy; 2025 Igreja Ministério Verdade Vida. Todos os direitos reservados.</p>
-            <br>
+            
+            <p class="copyright">&copy; 2025 Igreja Ministério Verdade Vida. Todos os direitos reservados.</p>
+            
             <div class="credit">
-                <p>&copy; Site criado por  <a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_<i class="fab fa-instagram"></i></a></p>
-                
+                <p>Site criado por <a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_ <i class="fab fa-instagram"></i></a></p>
             </div>
-        </footer>
-        <script src="script.js"></script>
-        <script>
-            // Menu Mobile
-            const menuToggle = document.createElement('div');
-            menuToggle.className = 'menu-toggle';
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            document.querySelector('.nav-content').appendChild(menuToggle);
-        
-            menuToggle.addEventListener('click', () => {
-                const navLinks = document.querySelector('.nav-links');
-                navLinks.classList.toggle('active');
-            });
-        
-            // Fechar menu ao clicar em um link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    document.querySelector('.nav-links').classList.remove('active');
-                });
-            });
-        
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script>
-    </body>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

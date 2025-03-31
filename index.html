@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="icon" href="imagens/icon.png" type="image/png">
-    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <!-- 2025 - Ano Da Maturidade -->
-        <div class="year-banner">
-            <h2 class="year-title"><strong>2025</strong> - Ano Da Porção Dobrada</h2>
-        </div>
-        
-        <!-- Navbar -->
+<body>
+    <!-- 2025 - Ano Da Maturidade -->
+    <div class="year-banner">
+        <h2 class="year-title"><strong>2025</strong> - Ano Da Porção Dobrada</h2>
+    </div>
+    
+    <!-- Navbar -->
+    <div class="container">
         <nav class="navbar"> 
             <div class="nav-content">
-                <div class="logo">
+                <div class="logo-container">
                     <a href="index.html">
-                    <img src="imagens/icon.png" alt="Logo" class="logo"></a>
+                        <img src="imagens/icon.png" alt="Logo" class="logo">
+                    </a>
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Início</a>
@@ -30,48 +32,64 @@
                     <a href="#eventos">Eventos</a>
                 </div>
                 <div class="navbar-social-icons">
-                    <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </nav>
-    
+    </div>
+
+    <main class="content-wrapper">
         <!-- Hero Section -->
         <section class="hero" id="inicio">
             <div class="hero-content">
                 <h1>Bem-vindo à Igreja Ministério Verdade Vida</h1>
-                <p>Uma Igreja que foca em levar a palavra de Cristo para as Nações!!! </p>
-                <br> <br> <br> <br>
+                <p>Uma Igreja que foca em levar a palavra de Cristo para as Nações!</p>
                 <a href="sobre.html" class="cta-button">Mais sobre nós</a>
             </div>
         </section>
 
-        <!-- Primeira localização -->
-        <section class="map-section">
-            <h2 class="section-title">Nossa Localização - Seropédica</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.2880293618973!2d-43.694492825444094!3d-22.754689779362433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99565eec128467%3A0xf2c0679c123e3103!2sEstr.%20Rio%20S%C3%A3o%20Paulo%2C%203987%20-%20Incra%2C%20Serop%C3%A9dica%20-%20RJ%2C%2023890-000!5e0!3m2!1spt-BR!2sbr!4v1741287378549!5m2!1spt-BR!2sbr" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                </iframe>
-            </div>
-        </section>
+        <!-- Localizações -->
+        <section class="locations-section">
+            <h2 class="section-title">Nossas Localizações</h2>
+            
+            <div class="location-cards">
+                <!-- Primeira localização -->
+                <div class="location-card">
+                    <h3 class="location-title">Seropédica</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.2880293618973!2d-43.694492825444094!3d-22.754689779362433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99565eec128467%3A0xf2c0679c123e3103!2sEstr.%20Rio%20S%C3%A3o%20Paulo%2C%203987%20-%20Incra%2C%20Serop%C3%A9dica%20-%20RJ%2C%2023890-000!5e0!3m2!1spt-BR!2sbr!4v1741287378549!5m2!1spt-BR!2sbr" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Mapa da localização em Seropédica">
+                        </iframe>
+                    </div>
+                    <div class="location-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Estr. Rio São Paulo, 3987 - Incra, Seropédica - RJ</p>
+                    </div>
+                </div>
 
-        <!-- Nova localização São Miguel -->
-        <section class="map-section">
-            <h2 class="section-title">Nossa Localização - São Miguel</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4696807796804!2d-43.72439132706276!3d-22.710777633851254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99540462ba399b%3A0x90cafa9920cb1beb!2sMinist%C3%A9rio%20Verdade%20e%20vida%20Projeto%20Restaurar!5e0!3m2!1spt-BR!2sbr!4v1741287789542!5m2!1spt-BR!2sbr"
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                </iframe>
+                <!-- Segunda localização -->
+                <div class="location-card">
+                    <h3 class="location-title">São Miguel</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4696807796804!2d-43.72439132706276!3d-22.710777633851254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99540462ba399b%3A0x90cafa9920cb1beb!2sMinist%C3%A9rio%20Verdade%20e%20vida%20Projeto%20Restaurar!5e0!3m2!1spt-BR!2sbr!4v1741287789542!5m2!1spt-BR!2sbr"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Mapa da localização em São Miguel">
+                        </iframe>
+                    </div>
+                    <div class="location-info">
+                        <p><i class="fas fa-map-marker-alt"></i> São Miguel, Seropédica - RJ</p>
+                    </div>
+                </div>
             </div>
         </section>
     
-        <!-- Na seção de eventos -->
+        <!-- Seção de eventos -->
         <section class="events" id="eventos">
             <h2 class="section-title">Nossos Eventos</h2>
             
@@ -81,7 +99,6 @@
                     <option value="todos">Todos os Eventos</option>
                     <option value="seropedica">Seropédica</option>
                     <option value="sao-miguel">São Miguel</option>
-
                 </select>
             </div>
 
@@ -90,7 +107,7 @@
                 <div class="event-card" data-category="seropedica sao-miguel">
                     <div class="event-image" style="background-image: url('imagens/icon.png')"></div>
                     <div class="event-info">
-                        <span class="event-date">Aos Domingos - 19:17h</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> Aos Domingos - 19:17h</span>
                         <h3>Culto de Celebração</h3>
                         <p>Venha adorar conosco em um momento especial de louvor e palavra.</p>
                     </div>
@@ -99,7 +116,7 @@
                 <div class="event-card" data-category="seropedica">
                     <div class="event-image" style="background-image: url('imagens/icon.png')"></div>
                     <div class="event-info">
-                        <span class="event-date">Toda Quarta-feira - 19:17h</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> Toda Quarta-feira - 19:17h</span>
                         <h3>Culto de Celebração</h3>
                         <p>Venha adorar conosco em um momento especial de louvor e palavra.</p>
                     </div>
@@ -109,7 +126,7 @@
                 <div class="event-card" data-category="sao-miguel seropedica">
                     <div class="event-image" style="background-image: url('imagens/escola.jpg')"></div>
                     <div class="event-info">
-                        <span class="event-date">Toda sexta-feira - 19:30h</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> Toda sexta-feira - 19:30h</span>
                         <h3>Escola de Profetas</h3>
                         <p>Venha aprender o mais profundo sobre a Bíblia.</p>
                     </div>
@@ -119,7 +136,7 @@
                 <div class="event-card" data-category="seropedica">
                     <div class="event-image" style="background-image: url('imagens/evento1.jpg')"></div>
                     <div class="event-info">
-                        <span class="event-date">Todo último domingo do mês - 19:17h</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> Todo último domingo do mês - 19:17h</span>
                         <h3>Culto Jovem MVV</h3>
                         <p>Encontros dinâmicos com música, palavra e networking para jovens.</p>
                     </div>
@@ -128,7 +145,7 @@
                 <div class="event-card" data-category="seropedica">
                     <div class="event-image" style="background-image: url('imagens/herdeiros.jpg')"></div>
                     <div class="event-info">
-                        <span class="event-date">26 de Abril - 14H30</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> 26 de Abril - 14H30</span>
                         <h3>Projeto Herdeiros</h3>
                         <p>O Projeto Herdeiros tem como objetivo alcançar crianças e suas famílias da comunidade local.</p>
                     </div>
@@ -138,57 +155,37 @@
                 <div class="event-card" data-category="sao-miguel">
                     <div class="event-image" style="background-image: url('imagens/icon.png')"></div>
                     <div class="event-info">
-                        <span class="event-date">Todo sábado - 17:00h</span>
+                        <span class="event-date"><i class="far fa-calendar-alt"></i> Todo sábado - 17:00h</span>
                         <h3>Círculo de Oração</h3>
                         <p>Momento poderoso de intercessão e comunhão com Deus.</p>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
-
-        <!-- Footer -->
-        <footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagens/icon.png" alt="Logo" class="footer-img">
+                <h3>Igreja Ministério Verdade Vida</h3>
+            </div>
+            
             <div class="social-icons">
-                <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/ministerioverdadeevidaprojetorestaurar?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/igrejadeseropedica?igsh=dms3aWtiYzA3aTVz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ministerioverdadeevidaproj6781" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>&copy; 2025 Igreja Ministério Verdade Vida. Todos os direitos reservados.</p>
-            <br>
+            
+            <p class="copyright">&copy; 2025 Igreja Ministério Verdade Vida. Todos os direitos reservados.</p>
+            
             <div class="credit">
-                <p>&copy; Site criado por<a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_<i class="fab fa-instagram"></i></a></p>
+                <p>Site criado por <a href="https://www.instagram.com/gustavo_almir_?igsh=MXFoaGI2ZWZkYzUzZw==">@gustavo_almir_ <i class="fab fa-instagram"></i></a></p>
             </div>
-        </footer>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
-    <script>
-        // Menu Mobile
-        const menuToggle = document.createElement('div');
-        menuToggle.className = 'menu-toggle';
-        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-        document.querySelector('.nav-content').appendChild(menuToggle);
-    
-        menuToggle.addEventListener('click', () => {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        });
-    
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.remove('active');
-            });
-        });
-    
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
