@@ -137,3 +137,14 @@ function updateActiveNavLink() {
 
 // Inicializar a atualização de links ativos
 updateActiveNavLink();
+
+// Registrar manifest para funcionalidade "Add to Home Screen"
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+        }, function(err) {
+            console.log('Falha ao registrar ServiceWorker: ', err);
+        });
+    });
+}

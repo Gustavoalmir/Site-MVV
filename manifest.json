@@ -1,0 +1,23 @@
+{
+  "name": "Ministério Verdade Vida",
+  "short_name": "MVV",
+  "description": "Igreja Ministério Verdade Vida - Seropédica e São Miguel",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "imagens/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "imagens/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
